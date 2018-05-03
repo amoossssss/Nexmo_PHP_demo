@@ -1,0 +1,46 @@
+body {
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  background-color: lightskyblue;
+}
+
+.header,
+.footer {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.header {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: .05rem solid #e5e5e5;
+}
+
+.footer {
+  padding-top: 1.5rem;
+  color: #777;
+  border-top: .05rem solid #e5e5e5;
+  padding-bottom: 1.5rem;
+}
+
+.welecome {
+  margin-bottom: 1rem; 
+}
+
+/* Customize container */
+@media (min-width: 40em) {
+  .container {
+    max-width: 40rem;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 6rem;
+    border-style: solid;
+    border-width: 8px;
+    border-color: grey;
+  }
+
+  .myForm {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}

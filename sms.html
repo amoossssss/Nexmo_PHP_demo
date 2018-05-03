@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link href="bootstrap.min.css" rel="stylesheet">
+	<link href="index.css" rel="stylesheet">
+	<title>Nexmo SMS Verify Demo - Verify</title>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="header clearfix">
+			<h1 class="text-muted text-center"><strong>簡訊驗證</strong></h1>
+		</div>
+
+		<div class="myForm">
+			<!-- modify ~amos_mac to your apache root file name -->
+			<form id="verifyCode" action="http://localhost/~amos_mac/Nexmo_test/check.php" method="post">
+
+				<div class="row justify-content-center welecome">
+					<h4 id="sms_name"></h4>
+					<h4>您好，匯款會在驗證後完成。</h4>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="form-group">
+						<label for="smsCode">SMS驗證碼</label>
+						<input type="text" class="form-control" id="smsCode" name="smsCode" placeholder="請輸入SMS驗證碼">
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="form-group">
+						<input type="hidden" class="form-control" id="req_id" name="req_id">
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="form-group">
+						<input type="hidden" class="form-control" id="userName" name="userName">
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-2">
+						<button onclick="postSmsForm()" class="btn btn-primary btn-lg">驗證</button>
+					</div>
+				</div>
+
+			</form>
+		</div>
+
+		<footer class="footer">
+			<p>@NCCUCC_amos 2018</p>	
+		</footer>
+
+	</div>
+
+	<script src="index.js"></script>
+
+</body>
+
+</html>

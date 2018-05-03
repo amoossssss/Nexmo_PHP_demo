@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link href="bootstrap.min.css" rel="stylesheet">
+	<link href="index.css" rel="stylesheet">
+	<title>Nexmo SMS Verify Demo - Form</title>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="header clearfix">
+			<h1 class="text-muted text-center"><strong>匯款表單</strong></h1>
+		</div>
+
+		<div class="myForm">
+			<!-- modify ~amos_mac to your apache root file name -->
+			<form id="verifyForm" action="http://localhost/~amos_mac/Nexmo_test/verify.php"  method="post">
+
+				<div class="row justify-content-center">
+
+					<div class="col-7">
+						<div class="form-group">
+							<label for="userName">姓名</label>
+							<input type="text" class="form-control" id="userName" name="userName" placeholder="請輸入姓名">
+						</div>
+
+						<div class="form-group">
+							<label for="phoneNumber">電話號碼</label>
+							<input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="請輸入電話號碼(+886)">
+						</div>
+
+						<div class="form-group">
+							<label for="moneyGoToName">匯款對象</label>
+							<input type="text" class="form-control" id="moneyGoToName" name="moneyGoToName" placeholder="請輸入匯款對象名稱">
+						</div>
+
+						<div class="form-group">
+							<label for="money">匯款金額</label>
+							<input type="number" class="form-control" id="money" name="money" placeholder="請輸入匯款金額">
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-2">
+						<button onclick="postIndexForm()" class="btn btn-primary btn-lg">匯款</button>
+					</div>
+				</div>
+
+			</form>
+		</div>
+
+
+		<footer class="footer">
+			<p>@NCCUCC_amos 2018</p>	
+		</footer>
+
+	</div>
+
+	<script src="index.js"></script>
+
+</body>
+
+</html>
